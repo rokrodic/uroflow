@@ -29,6 +29,9 @@ The picture shows how to connect to ESP8266. On ESP32 connect the VCC and GND fr
 HARDWARE DESIGN
 Here you can see how a weighing element is mounted. Tray is on the upper side of weighing element. The other side is mounted to the bottom plate. You will need two M3, two M4 screws and some nuts for spacers. You can see the prototype uses breadboard for connections.
 
+PROGRAMMING
+First edit config.json according to your likings. Upload the program to your microcontroller. Upload files to SPIFFS too. Files are compiled for any ESP32. For ESP8266 I use NodeMCU.
+
 FILE SYSTEM
 We use SPIFFS file system. It contains HTML files, which are editable. Before the first usage you have to upload them on microcontroller (with mkspiffs and flash program). If you do not do it, you can upload them one at a time via http://ip-address/upload. Files are available on my github page.
 Main page is "index.html".
@@ -41,8 +44,14 @@ HOW TO USE
 First you have to put the appliance on a leveled ground. Put the collecting mug on the tray. If it is heavy, leave it there for few minutes, for the load cell to stretch. If you use the machine for the first time or want to recalibrate it after a certain period of time, you initiate the calibration procedure with a known weight via wifi. The calibration parameters are stored on the machine itself.
 When measuring the urinary flow, you have to use a wide funnel which does not contact the mug or the device. Funnel collects split or sprayed stream and makes just a slight impact on the measurement. The other important thing is not to touch the device in any way while voiding. Touching makes artifacts.
 
+IP ADDRESS
+To find your IP address you can use any of the free IP scanners: for windows I recommend Advanced IP scanner, for android Fing. You can also connect the device to a serial port and use 115200 baud - IP address is displayed. If you use DHCP on your router, you can assign a fixed IP address to your device.
+
 WEBSITE
 After voiding open device IP address in your browser. A page displays. It contains a table and two graphs. See pictures. You can print the report by pressing CTRL+P. Before the actual print enter patient's name into name input box. The first graph displays the volume of voided urine in time. The second graph shows us flow in time.
+
+VARIABLES ACCESSIBLE THROUGH WEBPAGES
+All html files are editable. You can change them if you like. See the UroflowVARS.ino or check the enclosed html files.
 
 Free for personal use. Commercial use is negotiable. Simple to use, high precision, low cost (ca.10€).
 
