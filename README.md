@@ -3,7 +3,7 @@ DIY uroflow machine
 
 FOR ESP8266 AND ESP32 !!! Make your own uroflow machine!!!
 
-WHAT IS UROFLOW MACHINE?
+<B>WHAT IS UROFLOW MACHINE?</B>
 Uroflow is an appliance which measures how good your urinary flow is when emptying your bladder. It objectively shows patients' status to a urologist. It can show many things. The most known is an obstruction either due to benign prostatic enlargement or other reasons.
 
 As I am an urologist by profession and electronics geek and handyman by heart, I was very keen on making one. My purpose here is to populate this device among men. Most of us will have voiding problems at some time in our lives and the device can show us if it really is a problem or just our feeling.
