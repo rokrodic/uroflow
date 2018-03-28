@@ -1,5 +1,7 @@
 # uroflow
 <B>DIY uroflow machine</B></BR>
+<img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/20180118_085800.jpg?raw=true" alt="Uroflowmetry device prototype"></BR>
+Uroflowmetry device prototype</BR>
 </BR>
 <B>FOR ESP8266 AND ESP32 !!! Make your own uroflow machine!!!</B></BR>
 </BR>
@@ -22,6 +24,7 @@ I used DOIT ESP32 DEVKIT V1 (selection in Arduino IDE). For ESP8266 the code is 
 ESP32 brings longer voiding measurement times due to more RAM. Current version supports 5 minutes on ESP32. The ESP8266 has a 60 seconds limit, which is good enough for most people. In my clinical practice I've met only few percent of people voiding longer. These are the ones that really need help.</BR>
 </BR>
 <B>SCHEMATICS</B></BR>
+<img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/SCH.png?raw=true" alt="uroflowmetry device schematics"></BR>
 The schematic is simple. The weighing element has four wires: red, black, white and green. They come from the strain gauges on the load cell. Strain gauges are organized in a wheatstone bridge. That's why there are four wires. They are connected to a HX711 chip. Red goes to E+ and the black one to E-. "E"s represent excitation. Meanwhile white goes to A- and green wire to A+. They are inputs. "A" input can be programmatically defined as gain of 128 or 64, while input "B" has a fixed gain of 32. We will use input "A" with gain 128. Other selectable thing is sample rate. We can choose 10 or 80Hz. I selected 10Hz, as it has lower noise and gives enough precision. Connection to microcontroller has two communication lines: Clock and data line.
 The only other thing used in this version of the machine is a red LED which lights when there is an ongoing measurement or calibration procedure. Calibration procedure is also initiated via wifi.</BR>
 The picture shows how to connect to ESP8266. On ESP32 connect the VCC and GND from HX711 accordingly, DOUT goes to GPIO17 and CLK to GPIO16. LED connects from GPIO23.</BR>
