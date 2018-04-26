@@ -1,5 +1,5 @@
 # uroflow
-<B>DIY uroflow machine</B></BR>
+<B>DIY uroflowmetry machine</B></BR>
 <img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/20180118_085800.jpg?raw=true" alt="Uroflowmetry device prototype"></BR>
 Uroflowmetry device prototype</BR>
 </BR>
@@ -74,3 +74,8 @@ My homepage: http://www.rodic.si</BR>
 My youtube channel: https://www.youtube.com/channel/UCIOIhhPirDJH8LB0azJmd8w</BR>
 My Thingiverse designs: https://goo.gl/jdyHbF</BR>
 My GitHub page: https://goo.gl/XtjB3h</BR>
+
+<B>MEDIA</B>
+- HACKADAY: https://hackaday.com/2018/04/01/assess-your-output-with-a-cheap-diy-urine-flowmeter/
+- ELEKTOR MAGAZINE - won 5th place in ESP32 design contest 2018: https://www.elektormagazine.com/labs/contest/esp32-design-contest-2018
+- ELEKTOR MAGAZINE: https://www.elektormagazine.com/labs/uroflow-machine-for-every-home
