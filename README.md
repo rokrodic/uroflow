@@ -3,7 +3,7 @@
 <img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/20180118_085800.jpg?raw=true" alt="Uroflowmetry device prototype"></BR>
 Uroflowmetry device prototype</BR>
 </BR>
-<B>FOR ESP8266 AND ESP32 !!! Make your own uroflow machine!!!</B></BR>
+<B>FOR ESP32!!! ESP8266 SUPPORT HAS BEEN DROPPED DUE TO LOW RAM AND COMPUTING POWER THEY HAVE!!!</B></BR>
 </BR>
 <B>WHAT IS UROFLOW MACHINE?</B></BR>
 Uroflow is an appliance which measures how good your urinary flow is when emptying your bladder. It objectively shows patients' status to a urologist. It can show many things. The most known is an obstruction either due to benign prostatic enlargement or other reasons.</BR>
@@ -58,15 +58,39 @@ All html files are editable. You can change them if you like. See the UroflowVAR
 </BR>
 <B>Free for personal use. Commercial use is negotiable. Simple to use, high precision, low cost (ca.10€).</B></BR>
 </BR>
+<B>HOW TO UPLOAD FIRMWARE AND FILES</B></BR>
+Watch my video on Youtube how to do the steps below.</BR>
+Unpack the UPLOAD.ZIP to your hard drive. It contains all the necessary files. Here are two parts. In the first one I explain how to upload firmware and in the second one how to upload website files.</BR>
+PART 1</BR>
+======</BR>
+1. Copy latest firmware into "Firmware" directory. The file for ESP32 should be named: UroflowESP32.ino_ESP32.bin. The file for ESP8266 should be named UroflowESP32.ino_ESP8266.bin.</BR>
+2. Connect your uroflow device via USB cable to your PC.</BR>
+3. Find the COM PORT number the device presents itself. </BR>
+   Example to find the port number: Click the windows icon at the bottom left of your screen. Type "device manager" and windows should find the program. If this latest step does not work on your computer there are two options: a) press Windows Key + R and run "devmgmt.msc" b) find the program under the menus.</BR>
+   Then look under the "Ports (COM & LPT)" for the COM port (something like "Silicon Labs CP210x USB to UART Bridge (COM3)") - this brings us to COM3.</BR>
+4. Edit appropriate .bat file UroflowUpload_ESP32.bat (for ESP32) and UroflowUpload_ESP8266.bat (for ESP8266) and CHANGE YOUR COM PORT!</BR>
+5. Run the appropriate .bat file.</BR>
+</BR>
+Alternative commands:</BR>
+ESP32:</BR>
+esptoolESP32.exe --chip esp32 --port COM3 --baud 921600 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 80m --flash_size detect 0xe000 esp32/partitions/boot_app0.bin 0x1000 esp32/sdk/bin/bootloader_dio_80m.bin 0x10000 Firmware/UroflowESP32.ino_ESP32.bin 0x8000 Firmware/UroflowESP32.ino.partitions_ESP32.bin</BR>
+</BR>
+ESP8266:</BR>
+esptoolESP8266.exe -vv -cd nodemcu -cb 115200 -cp COM3 -ca 0x00000 -cf Firmware/UroflowESP32.ino_ESP8266.bin</BR>
+</BR>
+PART 2</BR>
+======</BR>
+After finding your IP address (with Fing for android or Advanced IP scanner for windows) enter into browser: "your-ip-address/upload". Mind the /upload! here you can select one-by-one file and upload it to your file system.</BR>
+</BR>
 ---------------------------------------------------------------------------------------------------------------------</BR>
 <B>Do you like my work?</B></BR>
-1. Hit LIKE on my projects and youtube videos.</BR>
-2. Hit SUBSCRIBE on my youtube channel! Did you consider subscribing to my youtube channel and being updated when new videos are published?</BR>
-3. COMMENT where you can.</BR>
-4. SHARE.</BR>
-5. Support my work on Patreon: https://www.patreon.com/GreenEyedExplorer</BR>
-6. You can also donate directly to me via: http://paypal.me/rokrodic</BR>
-7. Buying through my affiliate links makes you no additional cost, but gives me a small headstart in getting new things for my explorations.</BR>
+1. Hit <B>LIKE</B> on my projects and youtube videos.</BR>
+2. Hit <B>SUBSCRIBE</B> on my youtube channel! Did you consider subscribing to my youtube channel and being updated when new videos are published?</BR>
+3. <B>COMMENT</B> where you can.</BR>
+4. <B>SHARE</B>.</BR>
+5. Support my work on <B>Patreon</B>: https://www.patreon.com/GreenEyedExplorer</BR>
+6. You can also <B>buy me a coffee</B> directly via: http://paypal.me/rokrodic</BR>
+7. Buying through my <B>affiliate links</B> makes you no additional cost, but gives me a small headstart in getting new things for my explorations.</BR>
 </BR>
 ---------------------------------------------------------------------------------------------------------------------</BR>
 <B>LINKS:</B>
