@@ -3,7 +3,7 @@
 <img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/20180118_085800.jpg?raw=true" alt="Uroflowmetry device prototype"></BR>
 Uroflowmetry device prototype</BR>
 </BR>
-<B>FOR ESP32!!! ESP8266 SUPPORT HAS BEEN DROPPED DUE TO LOW RAM AND COMPUTING POWER THEY HAVE!!!</B></BR>
+<B>FOR ESP32!!! ESP8266 SUPPORT HAS BEEN DROPPED DUE TO LOW RAM AND COMPUTING POWER THEY HAVE!!! See Versions at the bottom</B></BR>
 </BR>
 <B>WHAT IS UROFLOW MACHINE?</B></BR>
 Uroflow is an appliance which measures how good your urinary flow is when emptying your bladder. It objectively shows patients' status to a urologist. It can show many things. The most known is an obstruction either due to benign prostatic enlargement or other reasons.</BR>
@@ -12,16 +12,16 @@ As I am an urologist by profession and electronics geek and handyman by heart, I
 I offer my firmware for free. As the device is meant for personal usage, it allows 50 measurements before you have to reprogramm the device. Commercial devices cost few thousand euros. See the links below.</BR>
 </BR>
 <B>VIDEO</B></BR>
-I have two videos for my Youtube channel. In the first one I explain what uroflow machine is, how to make the machine and how to use it. In the second video we will see how to calibrate the machine and what does my firmware offer. </BR>
+I have made videos for my Youtube channel. In the first one I explain what uroflow machine is, how to make the machine and how to use it. In the second video we will see how to calibrate the machine and what does my firmware offer. </BR>
 </BR>
 <B>PARTS</B></BR>
-- ESP32 (or ESP8266)</BR>
+- ESP32 (or ESP8266-support dropped)</BR>
 - 1Kg load stretch cell with HX711</BR>
 - 4 wires</BR>
 - optional: LED and a resistor</BR>
 </BR>
 I used DOIT ESP32 DEVKIT V1 (selection in Arduino IDE). For ESP8266 the code is compiled for NodeMCU V1.0.</BR>
-ESP32 brings longer voiding measurement times due to more RAM. Current version supports 5 minutes on ESP32. The ESP8266 has a 60 seconds limit, which is good enough for most people. In my clinical practice I've met only few percent of people voiding longer. These are the ones that really need help.</BR>
+ESP32 brings longer voiding measurement times due to more RAM. Current version supports 5-6 minutes on ESP32 for commecial products or 3-4 minutes for free version. The ESP8266 had a 60 seconds limit, which is good enough for most people. In clinical practice there are few percent of people voiding longer. These are the ones that really need help.</BR>
 </BR>
 <B>SCHEMATICS</B></BR>
 <img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/SCH.png?raw=true" alt="uroflowmetry device schematics"></BR>
@@ -33,7 +33,7 @@ The only other thing used in this version of the machine is a red LED which ligh
 Here you can see how a weighing element is mounted. Tray is on the upper side of weighing element. The other side is mounted to the bottom plate. You will need two M3, two M4 screws and some nuts for spacers. You can see the prototype uses breadboard for connections.</BR>
 </BR>
 <B>PROGRAMMING</B></BR>
-First edit config.json according to your likings. Upload the program to your microcontroller. Upload files to SPIFFS too. Files are compiled for any ESP32. For ESP8266 I use NodeMCU.</BR>
+First edit config.json according to your likings. Upload the program to your microcontroller. Upload files to SPIFFS too. Files are compiled for any ESP32. For ESP8266 I used NodeMCU.</BR>
 </BR>
 <B>FILE SYSTEM</B></BR>
 We use SPIFFS file system. It contains HTML files, which are editable. Before the first usage you have to upload them on microcontroller (with mkspiffs and flash program). If you do not do it, you can upload them one at a time via http://ip-address/upload. Files are available on my github page.</BR>
