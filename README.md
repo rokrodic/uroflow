@@ -3,7 +3,11 @@
 <img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/20180118_085800.jpg?raw=true" alt="Uroflowmetry device prototype"></BR>
 Uroflowmetry device prototype</BR>
 </BR>
-<B>FOR ESP32!!! ESP8266 SUPPORT HAS BEEN DROPPED DUE TO LOW RAM AND COMPUTING POWER THEY HAVE!!! See Versions at the bottom</B></BR>
+<B>FOR ESP32!!! ESP8266 SUPPORT HAS BEEN DROPPED DUE TO LOW RAM AND COMPUTING POWER THEY HAVE!!! See Versions at the bottom</BR>
+</BR>
+Development of free version has stopped.</BR>
+There are several commercial versions - two stand-alones, Wifi/Windows, serial cable connection/Windows... All code has been completely rewritten - no dependency on other libraries, no external (Google) charts. Comes with Windows program and a device in a nice enclosure.
+</B></BR>
 </BR>
 <B>WHAT IS UROFLOW MACHINE?</B></BR>
 Uroflow is an appliance which measures how good your urinary flow is when emptying your bladder. It objectively shows patients' status to a urologist. It can show many things. The most known is an obstruction either due to benign prostatic enlargement or other reasons.</BR>
