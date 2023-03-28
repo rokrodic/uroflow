@@ -1,6 +1,8 @@
 # uroflow
+<h3><a href="https://www.rodic.si/home-uroflowmetry-device/">DO YOU WANT YOUR OWN DEVICE? BE THE FIRST TO GET IT!</a></h3></BR>
 <B>DIY uroflowmetry machine</B></BR>
 <img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/20180118_085800.jpg?raw=true" alt="Uroflowmetry device prototype"></BR>
+<a href="https://www.rodic.si/home-uroflowmetry-device/">DO YOU WANT YOUR OWN DEVICE?</a>.</BR>
 Uroflowmetry device prototype</BR>
 </BR>
 <B>FOR ESP32!!! ESP8266 SUPPORT HAS BEEN DROPPED DUE TO LOW RAM AND COMPUTING POWER THEY HAVE!!! See Versions at the bottom</BR>
@@ -88,6 +90,7 @@ After finding your IP address (with Fing for android or Advanced IP scanner for 
 </BR>
 ---------------------------------------------------------------------------------------------------------------------</BR>
 <B>Do you like my work?</B></BR>
+<a href="https://www.rodic.si/home-uroflowmetry-device/">DO YOU WANT YOUR OWN DEVICE?</a>.</BR>
 1. Hit <B>LIKE</B> on my projects and youtube videos.</BR>
 2. Hit <B>SUBSCRIBE</B> on my youtube channel! Did you consider subscribing to my youtube channel and being updated when new videos are published?</BR>
 3. <B>COMMENT</B> where you can.</BR>
