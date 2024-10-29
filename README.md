@@ -7,7 +7,7 @@ I have left the old text below, but before take a look at one of the types of ur
 </BR>
 <B>DIY uroflowmetry machine</B></BR>
 <img src="https://github.com/rokrodic/uroflow/blob/master/IMAGES/20180118_085800.jpg?raw=true" alt="Uroflowmetry device prototype"></BR>
-<a href="https://www.rodic.si/home-uroflowmetry-device/">DO YOU WANT YOUR OWN DEVICE?</a>.</BR>
+<a href="https://www.ipeewell.com/">DO YOU WANT YOUR OWN DEVICE?</a>.</BR>
 Uroflowmetry device prototype</BR>
 </BR>
 <B>FOR ESP32!!! ESP8266 SUPPORT HAS BEEN DROPPED DUE TO LOW RAM AND COMPUTING POWER THEY HAVE!!! See Versions at the bottom</BR>
