@@ -95,7 +95,7 @@ After finding your IP address (with Fing for android or Advanced IP scanner for 
 </BR>
 ---------------------------------------------------------------------------------------------------------------------</BR>
 <B>Do you like my work?</B></BR>
-<a href="https://www.rodic.si/home-uroflowmetry-device/">DO YOU WANT YOUR OWN DEVICE?</a>.</BR>
+<a href="https://www.ipeewell.com/">DO YOU WANT YOUR OWN DEVICE?</a>.</BR>
 1. Hit <B>LIKE</B> on my projects and youtube videos.</BR>
 2. Hit <B>SUBSCRIBE</B> on my youtube channel! Did you consider subscribing to my youtube channel and being updated when new videos are published?</BR>
 3. <B>COMMENT</B> where you can.</BR>
@@ -106,7 +106,7 @@ After finding your IP address (with Fing for android or Advanced IP scanner for 
 </BR>
 ---------------------------------------------------------------------------------------------------------------------</BR>
 <B>LINKS:</B>
-My homepage: http://www.rodic.si</BR>
+My homepage: https://www.ipeewell.com/</BR>
 My youtube channel: https://www.youtube.com/channel/UCIOIhhPirDJH8LB0azJmd8w</BR>
 My Thingiverse designs: https://goo.gl/jdyHbF</BR>
 My GitHub page: https://goo.gl/XtjB3h</BR>
